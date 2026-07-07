@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/var.css">
+    <script src="./scripts/var.js"></script>
+</head>
+<body>
+    <button onclick="travel_search()">여행지 검색하기</button>
+    <button onclick="laptop_search()">노트북 검색하기</button>
+    <button onclick="movie_search()">영화 검색하기</button>
+    <button onclick="func1()">회원 정보 보기</button>
+    <!-- vs code emmet 기능(태그의 관계에 맞춰서 단축어로 태그를 빠르게 작성하는 기능) -->
+    <!-- 태그 작성 후 tab 키 누르면 자동완성 -->
+    <header></header>
+    <!-- 태그 작성 후 tab 키를 작성했을때 a와 img처럼 다음 작성란이 있는경우 #부분처럼 적성 후 tab키를 누르면 다음 작성부분으로 이동 -->
+    <a href="#"></a> <!-- 필수속성 자동 -->
+    <img src="#" alt="설명">
+    <video src=""></video>
+    <input type="text">
+    <input type="text" class="">
+    <!-- 관계 활용 emmet -->
+    header>h1+div.right <!-- 해당 부분처럼 완성을 한다면 23번이상처럼 완성할수있음 -->
+    <header>
+        <h1><a href="#"><img src="" alt=""></a></h1>
+        <div class="righ">
+            <a href="" class="search"><img src="" alt=""></a>
+            <a href="" class="menu"><img src="" alt=""></a>
+        </div>
+    </header>
+    <!-- table#t1>tr*2>td*2 라고 작성했을 경우 밑에 있는 table처럼 완성할수있다. -->
+    <!-- table id=t1 2행2열 -->
+    <!-- table#t1>tr*2>td*2 -->
+    <!-- table#t1>tr*2>th+td -->
+    <table id="t1">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <ul class="items">
+        <li><a href="">
+            <img src="" alt="">
+            <span class="brand"></span>
+            <em class="name"></em>
+            <span class="price"></span></a>
+        </li>
+    </ul>
+</body>
+</html>
