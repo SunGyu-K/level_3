@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>자바스크립트 dom</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/dom01.css">
+    <!-- script의 defer속성 : body 태그를 모두 일고 scrip나중에 처리하라는 속성 -->
+    <script src="./scripts/dom02.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top">
+                <h1><a href="#">todo</a></h1>
+                <div class="right">
+                    <a href="#" class="search"><img src="" alt="검색"></a>
+                    <a href="#" class="menu"><img src="" alt="메뉴"></a>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="active all">all</a>
+                <a href="" class="today">today</a>
+            </nav>
+        </header>
+        <main>
+            <ul class="todo_list">
+                <li><span class="date"></span>05.17<em class="list"></em>책 15분 읽기</li>
+                <li><span class="date"></span>05.19<em class="list"></em>과제하기</li>
+                <li><span class="date"></span>05.24<em class="list"></em>복습하기</li>
+                <li><span class="date"></span>06.01<em class="list"></em>공부하기</li>
+            </ul>
+            <button id="write_btn" onclick="popupShow()"><img src="" alt="후기"></button>
+            <div class="write_popup">
+                <input type="text" class="user_write" placeholder="a new task">
+                <button id="write_btn2"><img src="" alt="할일등록하기"></button>
+            </div>
+            <div class="popup_bg" onclick="popupHide()"></div>
+        </main>
+    </div>
+</body>
+</html>
